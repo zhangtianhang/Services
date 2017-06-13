@@ -18,6 +18,7 @@
     text-align: center;
 
 }
+
 .vertical1{
 
     height: 45px;
@@ -45,30 +46,19 @@ margin: 0 60px 0 0;
     color: #888888;
 
 }
-.naver{
-    display: inline-block;
-    float: right;
-    height: 45px;
 
-
-}
-
-.active{
-     background-color:#f5f5f5;
-    border-bottom-style:solid ;
-    text-decoration: none;
-    color: dodgerblue;
-}
 .collapse{
     z-index: 2;
     left: 0;
     top:0;
     right: 0;
+    /*height:auto;*/
     height: 82px;
-    line-height: 80px;
+
+    /*line-height: auto;*/
     background-color: white;
     box-shadow: 1px 2px 3px #888888;
-    border-width:1px ;
+    border-width:2px ;
     padding: 0 100px ;
 
 }
@@ -98,6 +88,9 @@ margin: 0 60px 0 0;
     float: left;
     padding: 25px 25px 0 0 ;
 
+}
+#bodr{
+    display: none;
 }
 .text1{
     color:dodgerblue;
@@ -137,6 +130,78 @@ margin: 0 60px 0 0;
 .services7,.services8{
         padding:30px 0; ;
     }
+.naver{
+    float: right;
+    /*padding-top: 80px;*/
+}
+   .nav-item a{
+       list-style-type:none;
+    position:relative;
+    text-decoration: none;
+    font-size:16px;
+       text-align: center;
+      padding: 10px;
+       color: black;
+       /*line-height: 80px;*/
+}
+   .nav-item {
+
+       display: inline;
+    padding:10px ;
+       /*height: 80px;*/
+       line-height: 80px;
+
+
+}
+   .active{
+       border-bottom-style: solid;
+       color:deepskyblue ;
+       background-color: #dcdcdc;
+       border-width: 4px;
+
+   }
+    .nav-item:hover{
+        background-color:#dcdcdc;
+        color:deepskyblue;
+        border-bottom-style: solid;
+        border-width: 4px;
+        text-decoration: none;
+}
+
+
+
+
+/*.nav{*/
+    /*position:relative;*/
+    /*display:inline-block;*/
+    /*font-size:14px;*/
+    /*!*font-weight:900;*!*/
+    /*line-height: 50px;*/
+/*}*/
+
+/*.nav-item{*/
+    /*float:left;*/
+    /**display:inline;*/
+    /*zoom:1;*/
+    /*position:relative;*/
+     /*display:block;*/
+/*}*/
+/*.nav-item a{*/
+    /*display:block;*/
+    /*color:black;*/
+    /*padding:15px ;*/
+    /*text-decoration: none*/
+/*}*/
+/*.nav-item:hover{*/
+    /*background-color:#f5f5f5;*/
+    /*border-bottom-style:solid ;*/
+    /*text-decoration: none;*/
+    /*color: dodgerblue;*/
+
+/*}*/
+
+
+
 @media only screen and (max-width:1000px) {
     .photo {
         float: left;
@@ -156,7 +221,7 @@ margin: 0 60px 0 0;
     top:0;
     right: 0;
     height: 82px;
-    line-height: 80px;
+    /*line-height: 80px;*/
     background-color: white;
     box-shadow: 1px 2px 3px #888888;
     border-width:1px ;
@@ -247,6 +312,73 @@ margin: 0 60px 0 0;
 }
 
 @media only screen and (max-width:900px) {
+    .collapse{
+    /*z-index: 2;*/
+    /*left: 0;*/
+    /*top:0;*/
+    /*right: 0;*/
+    height:auto;
+    /*line-height: 80px;*/
+    background-color: white;
+    box-shadow: 1px 2px 3px #888888;
+    border-width:1px ;
+    padding: 0  ;
+
+}
+    #bodr {
+    float: right;
+    position: relative;
+    text-align: center;
+    right: 20px;
+    bottom: 60px;
+    height: 38px;
+    width: 50px;
+    display: block !important;
+    border-style: solid;
+    border-color: lightgrey;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+  .boder {
+    position: relative;
+    margin-top: 4px;
+    margin-left: 4px;
+    display: block;
+    width: 22px;
+    height: 2px;
+  text-align: center;
+    border-radius: 1px;
+    box-sizing: border-box;
+    background-color: #888888;
+
+}
+
+    .vertical1{
+
+    height: 45px;
+    float: right;
+    display: inline-block;
+    /*border-right-style:solid ;*/
+    border-width: 1px;
+    border-color: #dcdcdc;
+    color: #888888;
+     line-height:45px;
+        padding: 0;
+    /*padding: 0 10px 0 5px;*/
+
+}
+.vertical2 {
+    height: 45px;
+    float: left;
+    display: inline-block;
+    border-style: none solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+    line-height: 45px;
+    /*padding: 0 10px;*/
+    color: #888888;
+}
+
     .services2,.services4,.services6,.services8{
         width: 100%;
         float: left;
@@ -279,90 +411,50 @@ margin: 0 60px 0 0;
     .Title{
 
     margin: 50px 110px 0 20px;
-
 }
+.naver{
+    float: none;
+    padding-top: 80px;
 }
-
-.nav{
+   .nav-item a{
+       list-style-type:none;
     position:relative;
-    display:inline-block;
+    text-decoration: none;
     font-size:14px;
-    font-weight:900;
-    line-height: 50px;
+       text-align: left;
+      padding: 10px;
+       color: black;
 }
-.nav-list{text-align:left;
-}
-.nav-item{float:left;
-    *display:inline;
-    zoom:1;
-    position:relative;
-     display:block;
-}
-.nav-item a{
+   .nav-item {
     display:block;
-    color:black;
-    padding:15px ;
-    text-decoration: none
+    padding:10px ;
+       height: 30px !important;
+       line-height: 30px!important;
+
+       border-bottom: none !important;
 }
-.nav-item>a:hover{
-    background-color:#f5f5f5;
-    border-bottom-style:solid ;
-    text-decoration: none;
-    color: dodgerblue;
-
-}
-
-.nav-item:hover
-
-.nav-mobile a:hover{
-
-}
-.nav-mobile{
-    border-style: solid;
-    border-color: gainsboro;
-    border-width: 1px;
-    display:none;cursor:pointer;
-    position:absolute;
-    top: 15px;
-    right: 10px;
-    /*background:#dcdcdc ;*/
-    background-size:18px;
-
-    height:50px;
-    width:50px;}
-@media only screen and (max-width:900px)  {
-    .active{
-        background-color:#f5f5f5;
-        border-left-style:solid ;
-        border-bottom-style: none !important;
-        text-decoration: none;
-        color: dodgerblue;
-}
-    .nav-mobile{
-        display:block;
-    }
-    .nav{
-             width:100%;padding:100px 0 0;
-                               }
-    .nav-list{display:none;}
-    .nav-item{width:100%;float:left;}
-    .nav-item>a {
-        padding:15px;
-    }
-    .nav-click{display:block;
-         }
+   .active{
+       border-left-style: solid;
+       color:deepskyblue ;
+       background-color: #dcdcdc;
+       border-width: 4px;
+   }
     .nav-item:hover{
-        background-color:#f5f5f5;
-    border-left-style:solid ;
-    text-decoration: none;
-    color: dodgerblue;
-        border-bottom: none;
-    }
-    .nav-submenu{
-        display:none;
-        border-bottom: none !important;
-    }
-    }
+        background-color:#dcdcdc;
+        /*padding: 10px;*/
+        color:deepskyblue;
+        border-bottom-style: none !important;
+        border-left-style: solid;
+        border-width: 4px;
+        text-decoration: none;
+        width: 100%;
+}
+
+
+}
+
+
+
 @media only screen and (max-width:1125px) {
     .frame {
         padding: 30px 110px 0 110px;
