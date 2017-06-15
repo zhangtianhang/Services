@@ -4,26 +4,68 @@
 <meta charset="utf-8">
 <title>菜鸟教程(runoob.com)</title>
 <style>
-ul
-{
-	/*list-style-type:none;*/
-	margin:0;
-	padding:0;
+.naver{
+    float: right;
+    /*padding-top: 80px;*/
 }
-li
-{
-display:inline;
+   .nav-item a{
+       list-style-type:none;
+    position:relative;
+    text-decoration: none;
+    font-size:16px;
+       text-align: center;
+      padding: 10px;
+       color: black;
+       /*line-height: 80px;*/
 }
+   .nav-item {
+
+       display: inline;
+    padding:10px ;
+       /*height: 80px;*/
+       /*line-height: 80px;*/
+
+
+}
+
+   .active{
+       border-bottom-style: solid;
+       color:deepskyblue ;
+       background-color: #dcdcdc;
+       border-width: 4px;
+       height: 80px;
+       width: 100px;
+   }
+    .nav-item:hover{
+        background-color:#dcdcdc;
+        color:deepskyblue;
+        border-bottom-style: solid;
+        border-width: 4px;
+        text-decoration: none;
+
+}
+
 </style>
 </head>
 
 <body>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#news">News</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="#about">About</a></li>
-</ul>
+<div class="naver">
+
+
+     <nav class="nav">
+
+
+      <ul class="nav-list">
+        <li class="nav-item"><a href="?=home">HOME</a></li>
+        <li class="nav-item"><a href="?=about">FIRM PROFILE</a></li>
+        <li class="nav-item active"><a id="f" href="?=services">SERVICES</a></li>
+        <li class="nav-item"><a href="?=portfolio">PROJECTS</a></li>
+        <li class="nav-item"><a href="?=testimonials">CONTACT</a></li>
+      </ul>
+
+    </nav>
+</div>
+</div>
 
 </body>
 </html>
